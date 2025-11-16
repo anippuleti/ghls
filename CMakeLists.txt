@@ -5,6 +5,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_subdirectory(src)
 
+# Add infra/engine directory
+add_subdirectory(${CMAKE_SOURCE_DIR}/infra/engine)
+
 option(BUILD_TESTS "Build unit tests" ON)
 if(BUILD_TESTS)
   enable_testing()

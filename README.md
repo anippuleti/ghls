@@ -1,8 +1,20 @@
 # ghls
 Generic Hardware Logic Simulator
 
-This repo is for building fast cycle approximate HW models. All models are build upon a event (clock) scheduler framework.
+A minimal C++ project scaffold using CMake and Catch2 for unit tests.
 
-Top level directories.
+Build (Linux):
 
-clock_scheduler: source code for event scheduler framework is implemented in this directory.
+```bash
+mkdir -p build
+cd build
+cmake ..
+cmake --build . -- -j
+ctest --output-on-failure
+```
+
+Run the sample app:
+
+```bash
+./build/ghls_app
+```
